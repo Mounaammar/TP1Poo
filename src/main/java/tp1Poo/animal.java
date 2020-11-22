@@ -1,8 +1,8 @@
 package tp1Poo;
 
+import java.io.Serializable;
 
-
-public abstract class animal {
+public abstract class animal implements Serializable {
 
 	protected String nomAnimal;
 	protected TypaAnimal typeAnimal; 

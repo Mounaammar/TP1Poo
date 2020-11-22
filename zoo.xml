@@ -1,0 +1,11 @@
+<tp1Poo.Zoo>
+  <name>zootime</name>
+  <visiteurs>1</visiteurs>
+  <secteursAnimaux>
+    <tp1Poo.Secteur>
+      <typeAnimauxDansSecteur>chat</typeAnimauxDansSecteur>
+      <animauxDansSecteur/>
+    </tp1Poo.Secteur>
+  </secteursAnimaux>
+  <NB__MAX__VISITEURS>15</NB__MAX__VISITEURS>
+</tp1Poo.Zoo>

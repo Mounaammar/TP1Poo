@@ -1,12 +1,17 @@
 package tp1Poo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.logging.log4j.LogManager ;
 import org.apache.logging.log4j.Logger ;
 
 
-public class Zoo {
+public class Zoo implements Serializable{
+	private String name;
+	public String  getName(){return name ;}
+	public void setName(String name) {this.name=name;}
+	
 private int visiteurs;
 private List<Secteur> secteursAnimaux;
 private final int NB_MAX_VISITEURS=15;

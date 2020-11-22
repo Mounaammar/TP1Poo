@@ -1,9 +1,10 @@
 package tp1Poo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Secteur implements Comparable<Secteur> {
+public class Secteur implements Comparable<Secteur>, Serializable {
 private TypaAnimal typeAnimauxDansSecteur;
 List<animal> animauxDansSecteur;
 

@@ -1,6 +1,8 @@
 package tp1Poo;
 
-public enum TypaAnimal{
+import java.io.Serializable;
+
+public enum TypaAnimal implements Serializable{
 	chat,
 	chien
 }
