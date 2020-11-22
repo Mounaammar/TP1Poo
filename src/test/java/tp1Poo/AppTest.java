@@ -42,4 +42,17 @@ public void testNbAnimaux() {
 	assertEquals(1,zoo.nombreAnimaux());
 
 }
+@Test
+public void testNombreAnimauxDansSecteur() throws AnimalDansMauvaisSecteurException{
+Secteur s1= new Secteur(TypaAnimal.chat);
+Secteur s2= new Secteur(TypaAnimal.chat);
+assertEquals(0,s1.compareTo(s2));
+animal l1= new Chat("miou");
+s1.ajouterAnimal(l1);
+assertTrue(s1.compareTo(s2)>0);
+assertTrue(s2.compareTo(s1)<0);
+secteurComparateur sc= new secteurComparateur();
+sc.compare(s1,s2);
+
+}
 }

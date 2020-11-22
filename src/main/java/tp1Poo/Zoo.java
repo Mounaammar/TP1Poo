@@ -2,11 +2,15 @@ package tp1Poo;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.LogManager ;
+import org.apache.logging.log4j.Logger ;
+
 
 public class Zoo {
 private int visiteurs;
 private List<Secteur> secteursAnimaux;
 private final int NB_MAX_VISITEURS=15;
+
 public Zoo() {
 	visiteurs=0;
 	secteursAnimaux=new ArrayList<Secteur>();
@@ -35,4 +39,6 @@ public int nombreAnimaux() {
 private Secteur getSecteurFromType(TypaAnimal type) {
 	return secteursAnimaux.stream().filter(s -> s.obtenirType() == type).findFirst().orElse(null);
 }
+
 }
+

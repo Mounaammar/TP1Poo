@@ -3,7 +3,7 @@ package tp1Poo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Secteur {
+public class Secteur implements Comparable<Secteur> {
 private TypaAnimal typeAnimauxDansSecteur;
 List<animal> animauxDansSecteur;
 
@@ -23,4 +23,13 @@ public int getNombreAnimaux() {
 public TypaAnimal obtenirType() {
 	return typeAnimauxDansSecteur;
 }
+
+@Override
+public int compareTo(Secteur s) {
+	
+	return getNombreAnimaux()-s.getNombreAnimaux();
 }
+
+
+}
+
