@@ -4,9 +4,10 @@ import com.thoughtworks.xstream.XStream;
 
 import java.beans.XMLEncoder;
 import java.io.*;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+//on utilise log au lieu de stream pour laisser une trace de les logs facilement dans un fichier 
 public class App {
 	private static final Logger logger = LogManager.getLogger(App.class) ;
 
@@ -30,6 +31,7 @@ public class App {
 		zoo.nouvelAnimal(new Chien("fox"));
 		System.out.println(zoo.nombreAnimaux());
 		logger.error("erreur");
+		logger.info("Nombre d animal : " +zoo.nombreAnimaux() ) ;
 		Secteur s = new Secteur(TypaAnimal.chat);
 		Chat l1 = new Chat("jilber");
 		Chat l2 = new Chat("jilber2");
@@ -73,7 +75,7 @@ public class App {
 		  			  }
 		  			  catch (Exception e) {
 			 	  			 System.out.println(typeS + "n'est pas un type reconnu.");
-		  			  }
+		  			  }  
 		  		  break;
 		  		case "3": 
 		  			 System.out.println("Quel type d'animal ?");

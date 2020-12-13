@@ -7,8 +7,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tp1</name>
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
+	<!-- ces 2 balises pour indiquer au projet que la version de jdk est 1.8 -->
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+
 	</properties>
 
 	<dependencies>
